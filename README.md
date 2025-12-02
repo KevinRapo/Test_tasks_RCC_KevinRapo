@@ -2,7 +2,7 @@
 
 Solutions for the test tasks, by Kevin Räpo
 
-Task 1 was solved in regular python file, the solutions is in task1 folder  `task1.py`, for task2 `Jupyter` seemed like the right tool, since it allows for much better formatting and is excellent for data inspection.
+Task 1 was solved in a regular python file  `*.py`, for task2 `Jupyter` seemed like the right tool, since itõs great for formatting with text.
 
 ##  Task 1
 ### Summary
