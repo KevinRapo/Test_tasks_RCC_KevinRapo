@@ -1,6 +1,8 @@
-# Task 2
+# README
 
-This project analyzes **CGMES EQ profile instance** files (RDF/XML) using Python, focusing on power system element extraction, validation, and querying.
+Solutions for the test tasks, by Kevin Räpo
+
+Task 1 was solved in regular python file, the solutions is in task1 folder  `task1.py`, for task2 `Jupyter` seemed like the right tool, since it allows for much better formatting and is excellent for data inspection.
 
 ##  Task 1
 ### Summary
