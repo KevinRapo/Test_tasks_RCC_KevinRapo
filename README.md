@@ -46,7 +46,7 @@ Some of the questions are further expanded on in the Jupyter Notebook file.
   #### Semantic
   To get the file running first some xml definitions needed to be fixed
   - Missmatch of some opening and closing tags
-  ![alt text](task2/images/tags.png)
+  ![alt text](images/tags.png)
   - Line 678, 701 and 724 had the same ID for the "PowerTransformerEnd", which is not allowed, changed the ID endings so every ID was unique.
 
   #### Power system/logic related
