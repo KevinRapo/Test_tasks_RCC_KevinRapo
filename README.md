@@ -14,7 +14,14 @@ If running task 1, it should be launched from the subfolder, not the top-level f
 
 ![alt text](images/afrr.png)
 
+It can be seen that this day is much more down activation heavy, Estonias inbalances were mostly positive during the day with a large positive cumulative sum at the end of they. Latvia was more balanced around the 0 line, with a negative sum at the end of they, and Lithhuania was also down activation heavy, with a positive imbalance sum at the end of the day. 
+
 ![alt text](images/cumulative.png)
+
+One interesting observation here is that Estonias and Lithuanias aFRR down activations were about the same at the end of the day, eventhough Estonias imbalance was 3x higher at the end of the day.
+
+![alt text](images/zeroLine.png)
+
 
 ---
 

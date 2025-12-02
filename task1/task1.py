@@ -8,7 +8,7 @@ URL_BASE = "https://api-baltic.transparency-dashboard.eu/"
 API_SINGLE = "api/v1/export"
 # API_MULTIPLE = "api/v1/export-multiple" # Did not work due to how "," is formatted in the "requests" library.
 
-os.makedirs("data_task1") # Data folder
+os.makedirs("data_task1", exist_ok=True) # Data folder
 
 # Helpder fucntion that 
 def fetch_(url, api, params):
@@ -60,7 +60,6 @@ for obj in responses:
 
     df = pd.DataFrame(rows)
     df["timestamp"] = pd.to_datetime(df["timestamp"])
-    print(df)
     df = df.set_index("timestamp",drop=True)
     print(df)
     dataframes.append(df)
@@ -123,5 +122,16 @@ print("Cumulative aFRR activations during the day [MW]:\n\n",afrr_data.sum())
 print("\n")
 print("Cumulative imbalance during the day [MWh]:\n\n",imbalance_data.sum())
 
+# Imbalance split around zero line
+imbalance_positive = imbalance_data.where(imbalance_data > 0, 0).sum()
+imbalance_negative = imbalance_data.where(imbalance_data < 0, 0).sum()
+
+print("\n")
+print("Cumulative positive imbalance [MWh]:\n\n", imbalance_positive)
+print("\n")
+print("Cumulative negative imbalance [MWh]:\n\n", imbalance_negative)
+
+
 plt.tight_layout(pad=2.0)
 plt.show()
+
