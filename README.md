@@ -4,6 +4,8 @@ Solutions for the test tasks, by Kevin Räpo
 
 Task 1 was solved in a regular python file, for task2 `Jupyter` seemed like the right tool, I am a big fan of Jupyter since the formatting capabilities there are very useful for such displays of text/code mix.
 
+If there is a desire to test these tasks locally, both the pip compatible `requirements.txt` and conda compatible `environment.yaml` are provided.
+
 ##  Task 1
 
 If running task 1, it should be launched from the subfolder, not the top-level folder, to avoid confusion with the working directory (when running from the top-level folder in VS Code, the data folder is created at the top level).
