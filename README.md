@@ -2,7 +2,7 @@
 
 Solutions for the test tasks, by Kevin Räpo
 
-Task 1 was solved in a regular python file  `*.py`, for task2 `Jupyter` seemed like the right tool, I am a big fan of Jupyter since the formatting capabilities there are very useful for such displays of text/code mix.
+Task 1 was solved in a regular python file, for task2 `Jupyter` seemed like the right tool, I am a big fan of Jupyter since the formatting capabilities there are very useful for such displays of text/code mix.
 
 ##  Task 1
 
