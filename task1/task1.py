@@ -2,14 +2,13 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 import json
+import os
 
 URL_BASE = "https://api-baltic.transparency-dashboard.eu/"
 API_SINGLE = "api/v1/export"
-API_MULTIPLE = "api/v1/export-multiple" # Did not work due to how "," is formatted in the "requests" library. 
+# API_MULTIPLE = "api/v1/export-multiple" # Did not work due to how "," is formatted in the "requests" library.
 
-import os 
-
-print(os.getcwd())
+os.makedirs("data_task1") # Data folder
 
 # Helpder fucntion that 
 def fetch_(url, api, params):
@@ -34,7 +33,7 @@ for _id in ids:
     r = fetch_(URL_BASE, API_SINGLE, PARAMS)
     obj = r.json()
 
-    with open(f"task1/{_id}.json", "w", encoding="utf-8") as f:
+    with open(f"data_task1/{_id}.json", "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=4, ensure_ascii=False)
 
     responses.append(obj)

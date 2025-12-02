@@ -2,9 +2,12 @@
 
 Solutions for the test tasks, by Kevin Räpo
 
-Task 1 was solved in a regular python file  `*.py`, for task2 `Jupyter` seemed like the right tool, since itõs great for formatting with text.
+Task 1 was solved in a regular python file  `*.py`, for task2 `Jupyter` seemed like the right tool, I am a big fan of Jupyter since the formatting capabilities there are very useful for such displays of text/code mix.
 
 ##  Task 1
+
+If running task 1, it should be launched from the subfolder, not the top-level folder, to avoid confusion with the working directory (when running from the top-level folder in VS Code, the data folder is created at the top level).
+
 ### Summary
 
 1.	Make a graph and additional metrics to support the assessment of the amount of activation of aFRR reserves in relation to the imbalance. Provide also reasoning and background for the assessment.
